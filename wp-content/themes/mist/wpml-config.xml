@@ -1,0 +1,116 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">zozo_portfolio</custom-type>
+        <custom-type translate="1">zozo_testimonial</custom-type>
+		<custom-type translate="1">zozo_team_member</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">portfolio_categories</taxonomy>
+        <taxonomy translate="1">portfolio_skills</taxonomy>
+        <taxonomy translate="1">testimonial_categories</taxonomy>
+    </taxonomies>
+    <admin-texts>
+		<key name="zozo_options">
+			<key name="zozo_welcome_msg" />
+			<key name="zozo_header_email" />
+			<key name="zozo_header_address" />
+			<key name="zozo_header_business_hours" />
+			<key name="zozo_portfolio_related_title" />			
+			<key name="zozo_blog_read_more_text" />		
+			<key name="zozo_blog_title" />
+			<key name="zozo_blog_slogan" />			
+			<key name="zozo_copyright_text" />
+			<key name="zozo_search_placeholder" />
+		</key>
+	</admin-texts>
+	<custom-fields>
+        <custom-field action="copy">zozo_post_views_count</custom-field>        
+        <custom-field action="copy">zozo_theme_layout</custom-field>
+        <custom-field action="copy">zozo_layout</custom-field>
+        <custom-field action="copy">zozo_page_top_padding</custom-field>
+        <custom-field action="copy">zozo_page_bottom_padding</custom-field>
+		<custom-field action="copy">zozo_slider_position</custom-field>
+		<custom-field action="translate">zozo_revolutionslider</custom-field>
+		<custom-field action="copy">zozo_show_header</custom-field>
+		<custom-field action="copy">zozo_show_header_top_bar</custom-field>
+		<custom-field action="copy">zozo_show_header_sliding_bar</custom-field>
+		<custom-field action="copy">zozo_show_header_mini_cart</custom-field>
+		<custom-field action="copy">zozo_header_layout</custom-field>
+		<custom-field action="copy">zozo_header_type</custom-field>
+		<custom-field action="copy">zozo_header_toggle_position</custom-field>
+		<custom-field action="copy">zozo_header_transparency</custom-field>
+		<custom-field action="copy">zozo_header_skin</custom-field>
+		<custom-field action="copy">zozo_custom_nav_menu</custom-field>
+		<custom-field action="copy">zozo_header_bg_image</custom-field>
+		<custom-field action="copy">zozo_header_bg_color</custom-field>
+		<custom-field action="copy">zozo_header_bg_opacity</custom-field>
+		<custom-field action="copy">zozo_header_bg_repeat</custom-field>
+		<custom-field action="copy">zozo_header_bg_attachment</custom-field>
+		<custom-field action="copy">zozo_header_bg_postion</custom-field>
+		<custom-field action="copy">zozo_header_bg_full</custom-field>
+		<custom-field action="copy">zozo_show_footer_widgets</custom-field>
+		<custom-field action="copy">zozo_show_footer_menu</custom-field>
+        <custom-field action="translate">zozo_primary_sidebar</custom-field>
+        <custom-field action="translate">zozo_secondary_sidebar</custom-field>
+		<custom-field action="copy">zozo_hide_page_title_bar</custom-field>
+		<custom-field action="copy">zozo_hide_page_title</custom-field>
+		<custom-field action="copy">zozo_page_title_type</custom-field>
+		<custom-field action="copy">zozo_page_title_skin</custom-field>
+		<custom-field action="copy">zozo_page_title_align</custom-field>
+		<custom-field action="copy">zozo_display_breadcrumbs</custom-field>
+		<custom-field action="copy">zozo_show_page_slogan</custom-field>
+		<custom-field action="translate">zozo_page_slogan</custom-field>
+		<custom-field action="copy">zozo_page_title_height</custom-field>
+		<custom-field action="copy">zozo_page_title_mobile_height</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_title_color</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_slogan_color</custom-field>
+		<custom-field action="copy">zozo_page_breadcrumbs_color</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_border_color</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_bg</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_bg_color</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_bg_repeat</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_bg_position</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_bg_parallax</custom-field>
+		<custom-field action="copy">zozo_page_title_bar_bg_full</custom-field>
+		<custom-field action="copy">zozo_page_title_video_bg</custom-field>
+		<custom-field action="translate">zozo_page_title_video_id</custom-field>
+        <custom-field action="copy">zozo_body_bg_image</custom-field>
+        <custom-field action="copy">zozo_body_bg_repeat</custom-field>
+        <custom-field action="copy">zozo_body_bg_attachment</custom-field>
+        <custom-field action="copy">zozo_body_bg_color</custom-field> 
+        <custom-field action="copy">zozo_section_header_status</custom-field>
+        <custom-field action="translate">zozo_section_title</custom-field>
+        <custom-field action="translate">zozo_section_slogan</custom-field>
+        <custom-field action="copy">zozo_section_padding_top</custom-field>
+        <custom-field action="copy">zozo_section_padding_bottom</custom-field>
+        <custom-field action="copy">zozo_section_header_padding</custom-field>
+        <custom-field action="copy">zozo_section_title_color</custom-field>
+        <custom-field action="copy">zozo_section_slogan_color</custom-field>
+        <custom-field action="copy">zozo_section_text_color</custom-field>
+        <custom-field action="copy">zozo_section_content_heading_color</custom-field>
+        <custom-field action="copy">zozo_section_bg_color</custom-field>
+        <custom-field action="copy">zozo_parallax_status</custom-field>
+        <custom-field action="copy">zozo_parallax_bg_image</custom-field>
+        <custom-field action="copy">zozo_parallax_bg_repeat</custom-field>
+        <custom-field action="copy">zozo_parallax_bg_attachment</custom-field>
+        <custom-field action="copy">zozo_parallax_bg_postion</custom-field>
+        <custom-field action="copy">zozo_parallax_bg_size</custom-field>
+        <custom-field action="copy">zozo_parallax_bg_overlay</custom-field>
+        <custom-field action="copy">zozo_overlay_pattern_status</custom-field>
+        <custom-field action="copy">zozo_overlay_pattern_style</custom-field>
+        <custom-field action="copy">zozo_section_overlay_color</custom-field>
+        <custom-field action="translate">zozo_external_link_url</custom-field>
+        <custom-field action="translate">zozo_single_video_code</custom-field>
+        <custom-field action="translate">zozo_single_audio_code</custom-field>
+		<custom-field action="translate">zozo_portfolio_custom_text</custom-field>
+		<custom-field action="copy">zozo_portfolio_date</custom-field>
+		<custom-field action="translate">zozo_portfolio_client</custom-field>
+		<custom-field action="copy">zozo_portfolio_share</custom-field>
+		<custom-field action="translate">zozo_author_designation</custom-field>
+        <custom-field action="translate">zozo_author_company_name</custom-field>
+        <custom-field action="copy">zozo_author_company_url</custom-field>
+		<custom-field action="translate">zozo_member_name</custom-field>
+		<custom-field action="translate">zozo_member_designation</custom-field>
+		<custom-field action="translate">zozo_member_description</custom-field>
+    </custom-fields>	
+</wpml-config>

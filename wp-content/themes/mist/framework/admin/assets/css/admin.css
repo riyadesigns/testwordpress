@@ -1,0 +1,35 @@
+#update-nag, .update-nag {
+	display: block;
+}
+.redux-main #zozo_options-zozo_header_type img {
+    width: 100% !important;
+}
+#zozo_options-zozo_header_type.redux-container-image_select ul.redux-image-select li {
+	display: block;
+}
+.vc_colored-dropdown .primary-bg {
+	background: #ffc400 !important;
+	color: #ffffff !important;
+}
+/* ===============================================
+ * Visual Composer
+ * =============================================== */
+.wpb-layout-element-button .zozo-vc-icon {
+	background-image: url(../images/vc-icon.png);
+}
+.zozo-vc-icon .wpb_element_wrapper,
+.vc_element-icon.zozo-vc-icon {
+	background-image: url(../images/vc-icon.png);
+}
+.zozo-vc-icon.wpb_content_element > .wpb_element_wrapper {
+    background-image: url(../images/vc-icon.png);
+}
+.wpb_my_bartag[data-element_type=zozo-vc-icon] {
+   background-image: url(../images/vc-icon.png);
+}
+/* ===============================================
+ * Ultimate Addon
+ * =============================================== */
+.icon_set-icomoonpack1.metabox-holder .button.smile_del_icon, .icon_set-icomoonpack2.metabox-holder .button.smile_del_icon, .icon_set-icomoonpack3.metabox-holder .button.smile_del_icon {
+	display: none !important;
+}

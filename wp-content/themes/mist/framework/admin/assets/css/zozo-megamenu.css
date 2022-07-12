@@ -1,0 +1,32 @@
+/*
+ * Zozo Megamenu Framework CSS
+ * 
+ */
+
+.field-zozo-megamenu-status,
+.field-zozo-megamenu-fullwidth,
+.field-zozo-megamenu-width,
+.field-zozo-megamenu-columns,
+.field-zozo-megamenu-title,
+.field-zozo-megamenu-link,
+.field-zozo-megamenu-widgetarea,
+.field-zozo-megamenu-content,
+.field-zozo-megamenu-icon {
+	display: none;
+}
+
+.menu-item-depth-0 .field-zozo-megamenu-status,
+.menu-item-depth-0.zozo-megamenu-active .field-zozo-megamenu-width,
+.menu-item-depth-0.zozo-megamenu-active .field-zozo-megamenu-fullwidth,
+.menu-item-depth-0.zozo-megamenu-active .field-zozo-megamenu-columns,
+.menu-item-depth-1.zozo-megamenu-active .field-zozo-megamenu-title,
+.menu-item-depth-1.zozo-megamenu-active .field-zozo-megamenu-link,
+.menu-item-depth-1.zozo-megamenu-active .field-zozo-megamenu-widgetarea,
+.menu-item-depth-1.zozo-megamenu-active .field-zozo-megamenu-content,
+.menu-item-depth-2.zozo-megamenu-active .field-zozo-megamenu-title,
+.menu-item-depth-2.zozo-megamenu-active .field-zozo-megamenu-link,
+.menu-item-depth-2.zozo-megamenu-active .field-zozo-megamenu-widgetarea,
+.menu-item-depth-2.zozo-megamenu-active .field-zozo-megamenu-content,
+.zozo-megamenu-active .field-zozo-megamenu-icon {
+	display: block;
+}

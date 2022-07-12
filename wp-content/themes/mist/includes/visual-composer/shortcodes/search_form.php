@@ -1,0 +1,381 @@
+<?php
+/**
+ * Search Form shortcode
+ */
+
+if ( ! function_exists( 'zozo_vc_search_form_shortcode' ) ) {
+	function zozo_vc_search_form_shortcode( $atts, $content = NULL ) {
+		
+		$atts = vc_map_get_attributes( 'zozo_vc_search_form', $atts );
+		extract( $atts );
+
+		$output = '';
+		$button_class = '';
+		$button_html = '';
+		$form_extra_class = '';
+		static $zozo_sform_id = 1;
+		
+		// Button
+		$button_html = $button_text;
+		if ( $button_align ) {
+			$button_class .= ' btn-'. $button_align;
+			$form_extra_class = ' form-btn-'. $button_align;
+		}
+		
+		if( $type == 'fontawesome' && function_exists( 'vc_icon_element_fonts_enqueue' ) ) vc_icon_element_fonts_enqueue( 'fontawesome' );	
+		
+		if ( 'yes' === $add_icon ) {
+			if( $button_html == '' ) {
+				$button_class .= ' zozo-btn-only-icon';
+			}
+			$button_class .= ' zozo-btn-icon-' . $icon_align;
+			if( isset( ${"icon_" . $type} ) ) {
+				$iconClass = ${"icon_" . $type};
+			} else {
+				$iconClass = 'fa fa-adjust';
+			}
+				
+			$icon_html = '<i class="zozo-btn-icon ' . esc_attr( $iconClass ) . '"></i>';
+		
+			if ( $icon_align == 'left' ) {
+				$button_html = $icon_html . ' ' . $button_html;
+			} else {
+				$button_html .= ' ' . $icon_html;
+			}
+		}
+				
+		$button_styles = $button_hover_styles = '';
+		if( isset( $bg_color ) && $bg_color != '' ) {
+			$button_styles = 'background-color: '.$bg_color.'; ';
+		}
+		
+		if( isset( $bg_text_color ) && $bg_text_color != '' ) {
+			$button_styles .= 'color: '.$bg_text_color.';';
+		}
+		
+		if( isset( $bg_hover_color ) && $bg_hover_color != '' ) {
+			$button_hover_styles = 'background-color: '.$bg_hover_color.'; ';
+		}
+		
+		if( isset( $bg_hover_text_color ) && $bg_hover_text_color != '' ) {
+			$button_hover_styles .= 'color: '.$bg_hover_text_color.';';
+		}
+		
+		// Classes
+		$main_classes = '';
+		if( isset( $classes ) && $classes != '' ) {
+			$main_classes .= ' ' . $classes;
+		}
+		if( isset( $form_style ) && $form_style != '' ) {
+			$main_classes .= ' form-style-' . $form_style;
+		}
+		if( isset( $add_domain ) && $add_domain == 'yes' ) {
+			$main_classes .= ' form-domain-view';
+		}
+		$main_classes .= zozo_vc_animation( $css_animation );
+		
+		if( ( isset( $button_styles ) && $button_styles != '' ) || ( isset( $button_hover_styles ) && $button_hover_styles != '' ) ) {
+			$output = '<style type="text/css" scoped>';
+			if( isset( $button_styles ) && $button_styles != '' ) {
+				$output .= '#zozo-search-form-'.$zozo_sform_id.' .btn.domain-search {' . $button_styles . ' }';
+			}
+			if( isset( $button_hover_styles ) && $button_hover_styles != '' ) {
+				$output .= '#zozo-search-form'.$zozo_sform_id.' .btn.domain-search:hover, #zozo-search-form-'.$zozo_sform_id.' .btn.domain-search:active, #zozo-search-form-'.$zozo_sform_id.' .btn.domain-search:focus {' . $button_hover_styles . ' }';
+			}
+			$output .= '</style>';
+		}
+
+		$output .= '<div id="zozo-search-form-'.$zozo_sform_id.'" class="search-domain-form-wrapper'. esc_attr( $main_classes ) .'">';
+			$output .= '<form method="post" action="'.$action_url.'" id="zozo-search-domain'.$zozo_sform_id.'" name="zozo-search-domain'.$zozo_sform_id.'" class="zozo-search-domain-form'.$form_extra_class.'">';
+			
+				$output .= '<div class="form-group zozo-form-group-addon">';
+				$output .= '<div class="input-group">';
+					$output .= '<input type="text" placeholder="'.$placeholder_text.'" class="input-text domain-name form-control" name="domain_name">';
+					
+					if( isset( $add_domain ) && $add_domain == 'yes' ) {
+						$domain_extensions = explode( ",", $domain_extension );
+						$output .= '<select name="domain_extension" class="input-select">';
+						foreach ( $domain_extensions as $extension ) {
+							$output .= '<option value="'. $extension .'">'. $extension .'</option>';
+						}
+						$output .= '</select>';
+					}
+					$output .= '<div class="input-group-addon"><button type="submit" id="zozo_domain_form_submit" name="zozo_domain_form_submit" class="btn domain-search zozo-submit'. esc_attr( $button_class ) .'">'.$button_html.'</button></div>';
+				$output .= '</div>';
+				$output .= '</div>';
+
+			$output .= '</form>';
+		$output .= '</div>';
+		
+		$zozo_sform_id++;
+		
+		return $output;
+	}
+}
+
+
+if ( ! function_exists( 'zozo_vc_search_form_shortcode_map' ) ) {
+	function zozo_vc_search_form_shortcode_map() {
+	
+		vc_map( 
+			array(
+				"name"					=> __( "Search Form", "mist" ),
+				"description"			=> __( "Search form with different options.", 'mist' ),
+				"base"					=> "zozo_vc_search_form",
+				"category"				=> __( "Theme Addons", "mist" ),
+				"icon"					=> "zozo-vc-icon",
+				"params"				=> array(					
+					array(
+						'type'			=> 'textfield',
+						'admin_label' 	=> true,
+						'heading'		=> __( 'Extra Class', "mist" ),
+						'param_name'	=> 'classes',
+						'value' 		=> '',
+					),
+					array(
+						"type"			=> 'dropdown',
+						"heading"		=> __( "CSS Animation", "mist" ),
+						"param_name"	=> "css_animation",
+						"value"			=> array(
+							__( "No", "mist" )					=> '',
+							__( "Top to bottom", "mist" )			=> "top-to-bottom",
+							__( "Bottom to top", "mist" )			=> "bottom-to-top",
+							__( "Left to right", "mist" )			=> "left-to-right",
+							__( "Right to left", "mist" )			=> "right-to-left",
+							__( "Appear from center", "mist" )	=> "appear" ),
+					),
+					array(
+						"type"			=> 'dropdown',
+						"heading"		=> __( "Form Style", "mist" ),
+						"param_name"	=> "form_style",
+						'admin_label' 	=> true,
+						"value"			=> array(
+							__( "Default", "mist" )			=> "default",
+							__( "Transparent", "mist" )		=> "transparent" ),
+					),
+					array(
+						'type' 			=> 'checkbox',
+						'heading' 		=> __( 'Add Domain?', 'mist' ),
+						'param_name' 	=> 'add_domain',
+						"value"			=> array(
+							__( "Yes", "mist" )	=> "yes"
+						),						
+					),
+					array(
+						"type"			=> 'exploded_textarea',
+						"heading"		=> __( "Domain Extension", "mist" ),
+						"param_name"	=> "domain_extension",
+						"value" 		=> '.com,.co,.net,.org',
+						'admin_label' 	=> true,
+						"description" 	=> __( "Enter domain extensions. Divide extensions with linebreaks (Enter).", "mist" ),
+						'dependency' 	=> array(
+							'element' 	=> 'add_domain',
+							'value' 	=> 'yes',
+						),
+					),
+					array(
+						"type"			=> "textfield",
+						"heading"		=> __( "Form Action URL", "mist" ),
+						"param_name"	=> "action_url",
+						"value"			=> ''
+					),
+					array(
+						"type"			=> "textfield",
+						"heading"		=> __( "Placeholder Text", "mist" ),
+						"param_name"	=> "placeholder_text",
+						'admin_label' 	=> true,
+						"value"			=> __( 'Enter your Domain Name here...', 'mist' ),
+					),
+					array(
+						"type"			=> "textfield",
+						"heading"		=> __( "Button Text", "mist" ),
+						"param_name"	=> "button_text",
+						'admin_label' 	=> true,
+						"value"			=> __( 'Search', 'mist' ),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						'type' 			=> 'dropdown',
+						'heading' 		=> __( 'Button Alignment', 'mist' ),
+						'param_name' 	=> 'button_align',
+						'description' 	=> __( 'Select button alignment.', 'mist' ),
+						'value' 		=> array(
+							__( 'Inline', 'mist' ) 	=> 'inline',
+							__( 'Right', 'mist' ) 	=> 'right',
+						),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						'type' 			=> 'checkbox',
+						'heading' 		=> __( 'Add icon?', 'mist' ),
+						'param_name' 	=> 'add_icon',
+						"value"			=> array(
+							__( "Yes", "mist" )	=> "yes"
+						),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						'type' 			=> 'dropdown',
+						'heading' 		=> __( 'Icon Alignment', 'mist' ),
+						'description' 	=> __( 'Select icon alignment.', 'mist' ),
+						'param_name' 	=> 'icon_align',
+						'value' 		=> array(
+							__( 'Left', 'mist' ) 	=> 'left',
+							__( 'Right', 'mist' ) => 'right',
+						),
+						'dependency' 	=> array(
+							'element' 	=> 'add_icon',
+							'value' 	=> 'yes',
+						),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type" 			=> "dropdown",
+						"heading" 		=> __( "Choose from Icon library", "mist" ),
+						"value" 		=> array(
+							__( "Font Awesome", "mist" ) 		=> "fontawesome",
+							__( "Lineicons", "mist" ) 		=> "lineicons",
+							__( "Flaticons", "mist" ) 		=> "flaticons",
+							__( "Icomoon Pack 1", "mist" ) 	=> "icomoonpack1",
+							__( "Icomoon Pack 2", "mist" ) 	=> "icomoonpack2",
+							__( "Icomoon Pack 3", "mist" ) 	=> "icomoonpack3",
+						),
+						"param_name" 	=> "type",
+						'dependency' 	=> array(
+							'element' 	=> 'add_icon',
+							'value' 	=> 'yes',
+						),
+						"description" 	=> __( "Select icon library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),					
+					array(
+						"type" 			=> 'iconpicker',
+						"heading" 		=> __( "Icon", "mist" ),
+						"param_name" 	=> "icon_fontawesome",
+						"settings" 		=> array(
+							"emptyIcon" 	=> false,
+							"type" 			=> "fontawesome",
+							"iconsPerPage" 	=> 200,
+						),
+						"dependency" 	=> array(
+							"element" 	=> "type",
+							"value" 	=> "fontawesome",
+						),
+						"description" 	=> __( "Select icon from library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),				
+					array(
+						"type" 			=> 'iconpicker',
+						"heading" 		=> __( "Icon", "mist" ),
+						"param_name" 	=> "icon_lineicons",
+						"value" 		=> "fa fa-minus-circle",
+						"settings" 		=> array(
+							"emptyIcon" 	=> true,
+							"type" 			=> 'simplelineicons',
+							"iconsPerPage" 	=> 200,
+						),
+						"dependency" 	=> array(
+							"element" 	=> "type",
+							"value" 	=> "lineicons",
+						),
+						"description" 	=> __( "Select icon from library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type" 			=> 'iconpicker',
+						"heading" 		=> __( "Icon", "mist" ),
+						"param_name" 	=> "icon_flaticons",
+						"value" 		=> "fa fa-minus-circle",
+						"settings" 		=> array(
+							"emptyIcon" 	=> true,
+							"type" 			=> 'flaticons',
+							"iconsPerPage" 	=> 200,
+						),
+						"dependency" 	=> array(
+							"element" 	=> "type",
+							"value" 	=> "flaticons",
+						),
+						"description" 	=> __( "Select icon from library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type" 			=> 'iconpicker',
+						"heading" 		=> __( "Icon", "mist" ),
+						"param_name" 	=> "icon_icomoonpack1",
+						"value" 		=> "",
+						"settings" 		=> array(
+							"emptyIcon" 	=> true,
+							"type" 			=> 'icomoonpack1',
+							"iconsPerPage" 	=> 4000,
+						),
+						"dependency" 	=> array(
+							"element" 	=> "type",
+							"value" 	=> "icomoonpack1",
+						),
+						"description" 	=> __( "Select icon from library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type" 			=> 'iconpicker',
+						"heading" 		=> __( "Icon", "mist" ),
+						"param_name" 	=> "icon_icomoonpack2",
+						"value" 		=> "",
+						"settings" 		=> array(
+							"emptyIcon" 	=> true,
+							"type" 			=> 'icomoonpack2',
+							"iconsPerPage" 	=> 4000,
+						),
+						"dependency" 	=> array(
+							"element" 	=> "type",
+							"value" 	=> "icomoonpack2",
+						),
+						"description" 	=> __( "Select icon from library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type" 			=> 'iconpicker',
+						"heading" 		=> __( "Icon", "mist" ),
+						"param_name" 	=> "icon_icomoonpack3",
+						"value" 		=> "",
+						"settings" 		=> array(
+							"emptyIcon" 	=> true,
+							"type" 			=> 'icomoonpack3',
+							"iconsPerPage" 	=> 4000,
+						),
+						"dependency" 	=> array(
+							"element" 	=> "type",
+							"value" 	=> "icomoonpack3",
+						),
+						"description" 	=> __( "Select icon from library.", "mist" ),
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type"			=> 'colorpicker',
+						"heading"		=> __( "Button Background Color", "mist" ),
+						"param_name"	=> "bg_color",
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type"			=> 'colorpicker',
+						"heading"		=> __( "Button Text Color", "mist" ),
+						"param_name"	=> "bg_text_color",
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type"			=> 'colorpicker',
+						"heading"		=> __( "Button Hover Background Color", "mist" ),
+						"param_name"	=> "bg_hover_color",
+						"group"			=> __( "Button", "mist" ),
+					),
+					array(
+						"type"			=> 'colorpicker',
+						"heading"		=> __( "Button Hover Text Color", "mist" ),
+						"param_name"	=> "bg_hover_text_color",
+						"group"			=> __( "Button", "mist" ),
+					),
+				)
+			) 
+		);
+	}
+}
+add_action( 'vc_before_init', 'zozo_vc_search_form_shortcode_map' );

@@ -1,0 +1,196 @@
+/* ================================================================
+ * SPORTSPRESS
+ * ================================================================ */
+/* Sportpress Widgets */
+.sp-widget-align-none {
+    width: 100%;
+}
+.widget .sp-template {
+    margin-bottom: 0;
+}
+.widget .sp-scrollable-table-wrapper table tr td.data-venue{
+	font-size: 20px;
+}
+.widget h4.sp-table-caption {
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 16px;
+    line-height: 43px;
+    text-transform: uppercase;
+    margin: 0 auto 15px;
+}
+.widget .sp-scrollable-table-wrapper table thead tr th, .widget .sp-scrollable-table-wrapper table tr td {
+    padding: 8px;
+}
+.sp-player-list-link.sp-view-all-link{
+	width: 100%;
+	float: left;
+	color: #7f7f7f;
+}
+.widget .sp-template .gallery-item .gallery-caption{
+	font-size: 80%;
+}
+/* Team Page */
+.sp-template-event-logos {
+    font-size: 37px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.sp-event-venue-map-row td, .sp-data-table.sp-event-venue td, .sp-data-table.sp-event-venue th{
+	padding: 20px 15px;
+}
+.sp-template.sp-template-event-video.sp-event-video iframe{
+	width: 100%;	
+}
+/* SPORTSPRESS */
+.sp-table-caption {
+	text-transform: uppercase;
+}
+.sp-data-table {
+	border:1px solid #e1e1e1;
+}
+.sp-data-table thead {
+    text-transform: uppercase;
+	color:#333;
+}
+table.sp-data-table th, table.sp-data-table td {
+	padding: 12px 15px;
+	vertical-align: middle;
+}
+.sp-data-table tbody tr.odd {
+	background:#f7f7f7;
+}
+table.sp-data-table td a {
+	color:#333;
+	font-weight:700;
+}
+.sp-template-event-results .sp-table-caption {
+	display:none;
+}
+/* TABLE ON BG */
+.bg-skin-dark .sp-data-table tbody tr,
+.bg-skin-dark .sp-data-table tbody tr.odd,
+.typo-light .sp-data-table tbody tr,
+.typo-light .sp-data-table tbody tr.odd {
+	background:rgba(0,0,0,0.5);
+}
+.bg-skin-dark .sp-data-table,
+.bg-skin-dark table.sp-data-table th, 
+.bg-skin-dark table.sp-data-table td,
+.typo-light .sp-data-table,
+.typo-light table.sp-data-table th, 
+.typo-light table.sp-data-table td {
+	border-color:#7c7c7c;
+}
+.bg-skin-dark table.sp-data-table td a,
+.typo-light table.sp-data-table td a {
+    color: #fff;
+}
+/* TEAM GALLERY */
+.sportspress .gallery,
+.sportspress .gallery.gallery-size-thumbnail {
+	display: block;
+    margin: 0 auto;
+}
+.sp-template.sp-template-player-gallery.sp-template-gallery {
+	float:left;
+	width:100%;
+}
+.sportspress .gallery-columns-1 .gallery-item, .sportspress .gallery-columns-2 .gallery-item,.sportspress .gallery-columns-3 .gallery-item,.sportspress .gallery-columns-4 .gallery-item, .sportspress .gallery-columns-5 .gallery-item, .sportspress .gallery-columns-6 .gallery-item,.sportspress .gallery-columns-7 .gallery-item, .sportspress .gallery-columns-8 .gallery-item, .sportspress .gallery-columns-9 .gallery-item,.sportspress .gallery-columns-1 .gallery-item:nth-of-type(n), .sportspress .gallery-columns-2 .gallery-item:nth-of-type(2n), .sportspress .gallery-columns-3 .gallery-item:nth-of-type(3n), .sportspress .gallery-columns-4 .gallery-item:nth-of-type(4n), .sportspress .gallery-columns-5 .gallery-item:nth-of-type(5n), 
+.sportspress .gallery-columns-6 .gallery-item:nth-of-type(6n), .sportspress .gallery-columns-7 .gallery-item:nth-of-type(7n), .sportspress .gallery-columns-8 .gallery-item:nth-of-type(8n), .sportspress .gallery-columns-9 .gallery-item:nth-of-type(9n) {
+	max-width: none;
+	text-align: unset;
+	margin: 0 15px 15px 0;
+}
+.sportspress .gallery .sp-view-all-link {
+	clear: both;
+}
+/*Event Shortcode */
+.sp-event-blocks .sp-event-title {
+	text-transform:uppercase;
+	font-weight:normal;
+}
+/* Countdown */
+.sp-template-countdown .sp-countdown span{
+	width: 25%;
+	float: left;
+    text-align: center;
+    background: #f7f7f7;
+    border: 1px solid #e1e1e1;
+	border-left: 0px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.sp-template-countdown .sp-countdown span:first-child {
+	border-left: 1px solid #e1e1e1;
+}
+.sp-template-countdown .sp-countdown span small {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    position: relative;
+}
+.sp-template-countdown .sp-countdown:after{
+	clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.type-page .sp-template.sp-template-countdown h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.type-page .sp-template.sp-template-countdown h5 a{
+	color: #888;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.type-page .sp-template.sp-template-countdown h5 {
+    font-size: 15px;
+    text-transform: capitalize;
+	color: #888;
+	margin-top: 0;
+}
+.sp_player .tags-share-section .share-options{
+	text-align: left;
+}
+.widget .sp-template-countdown .sp-countdown span{
+	padding: 10px;
+	font-size: 14px;
+}
+.widget .sp-template-countdown .sp-countdown span small {
+    position: relative;
+    padding: 0;
+    display: block;
+	font-size: 14px;
+}
+.widget .sp-template-countdown .sp-countdown span small:before{
+	content: none;
+	display: none;
+}
+.widget .sp-template-countdown .event-name {
+    line-height: 20px;
+	font-weight: 300;
+}
+.event-name,.event-venue,.event-league {
+	text-transform: uppercase;
+}
+h3.event-name {
+    font-size: 24px;
+}
+.bg-skin-dark .sp-template-countdown .sp-countdown span,
+.typo-light .sp-template-countdown .sp-countdown span {
+	background: rgba(0,0,0,0.5);
+}
+.bg-skin-dark .sp-template-countdown .sp-countdown span,
+.typo-light .sp-template-countdown .sp-countdown span {
+    border-color: #7c7c7c;
+}
+/* Team single */
+.sp_player .post-featured-image {
+    display: none;
+}

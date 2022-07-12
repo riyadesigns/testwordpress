@@ -1,0 +1,988 @@
+/* ------------- Global ------------- */
+a {
+	color: #F51F6F;
+}
+blockquote:before,
+blockquote:after {
+	color: #F51F6F;
+}
+.bg-style.bg-normal {
+	background-color: #F51F6F;
+	fill: #F51F6F;
+}
+.bg-overlay-primary:before{
+	background: rgba(245, 31, 111,0.8);
+}
+.typo-dark h1 > a:hover,.typo-dark h1 > a:active,.typo-dark h1 > a:focus, 
+.typo-dark h2 > a:hover,.typo-dark h2 > a:active,.typo-dark h2 > a:focus, 
+.typo-dark h3 > a:hover,.typo-dark h3 > a:active,.typo-dark h3 > a:focus, 
+.typo-dark h4 > a:hover,.typo-dark h4 > a:active,.typo-dark h4 > a:focus, 
+.typo-dark h5 > a:hover,.typo-dark h5 > a:active,.typo-dark h5 > a:focus, 
+.typo-dark h6 > a:hover,.typo-dark h6 > a:active,.typo-dark h6 > a:focus,
+.typo-light h1 > a:hover,.typo-light h1 > a:active,.typo-light h1 > a:focus, 
+.typo-light h2 > a:hover,.typo-light h2 > a:active,.typo-light h2 > a:focus, 
+.typo-light h3 > a:hover,.typo-light h3 > a:active,.typo-light h3 > a:focus, 
+.typo-light h4 > a:hover,.typo-light h4 > a:active,.typo-light h4 > a:focus, 
+.typo-light h5 > a:hover,.typo-light h5 > a:active,.typo-light h5 > a:focus, 
+.typo-light h6 > a:hover,.typo-light h6 > a:active,.typo-light h6 > a:focus {
+	color: #F51F6F;
+}
+
+/*--------------Page loader-----------*/
+.pageloader .ball-clip-rotate > div{
+	border-color: #F51F6F;
+	border-bottom-color: transparent;
+}
+/* ------------- Button ------------- */
+.btn:hover,.btn:focus,
+input[type="submit"]:hover,input[type="submit"]:focus,
+.tagcloud a:hover,.tagcloud a:focus,
+.vc_general.vc_btn3.vc_btn3-style-default:hover,
+.vc_general.vc_btn3.vc_btn3-style-default:focus,
+.vc_general.vc_btn3.vc_btn3-style-default:active,
+.vc_general.vc_btn3.vc_btn3-color-primary-bg:hover,
+.vc_general.vc_btn3.vc_btn3-color-primary-bg:focus,
+.vc_general.vc_btn3.vc_btn3-color-primary-bg:active,
+.vc_btn.vc_btn-primary-bg:hover,
+.vc_btn.vc_btn-primary-bg:focus,
+.vc_btn.vc_btn-primary-bg:active,
+.vc_general.vc_btn3.vc_btn3-color-juicy-pink:hover,
+.vc_general.vc_btn3.vc_btn3-color-juicy-pink:focus,
+.vc_general.vc_btn3.vc_btn3-color-juicy-pink:active {
+    background-color: rgba(245, 31, 111,0.8);
+}
+.btn, .btn[disabled], .btn.btn-default,
+.vc_general.vc_btn3.vc_btn3-color-primary-bg,
+.vc_btn.vc_btn-primary-bg,
+.vc_general.vc_btn3.vc_btn3-color-juicy-pink,
+.colorbtn, .btn-modal.btn-primary, .btn-modal.btn-primary:active, .btn-modal.btn-primary:focus {
+	background-color: #F51F6F;
+}
+.bg-style.bg-normal .btn, .bg-style.bg-normal .btn.btn-default, .bg-style.bg-normal input[type="submit"], .bg-style.bg-normal button[type="submit"],
+.bg-style.bg-normal .vc_general.vc_btn3.vc_btn3-color-primary-bg,
+.bg-style.bg-normal .vc_btn.vc_btn-primary-bg,
+.bg-style.bg-normal .vc_general.vc_btn3.vc_btn3-color-juicy-pink {
+	color: #F51F6F;
+}
+.btn-transparent-black:hover, .btn.btn-transparent-black:hover, .btn-transparent-white:hover, .btn.btn-transparent-white:hover, .btn-transparent-black-inverse,  .btn.btn-transparent-black-inverse, .btn-transparent-white-inverse, .btn.btn-transparent-white-inverse, .btn-transparent-color, .btn.btn-transparent-color,  .btn-transparent-color-inverse:hover, .btn.btn-transparent-color-inverse:hover {
+	color: #F51F6F;
+}
+.btn-transparent-color:hover, .btn.btn-transparent-color:hover, .btn-transparent-color-inverse, .btn.btn-transparent-color-inverse {
+	background-color: #F51F6F;
+}
+.vc_general.vc_btn3.vc_btn3-style-outline.vc_btn3-color-primary-bg,.vc_general.vc_btn3.vc_btn3-style-outline.vc_btn3-color-primary-bg:hover,
+.btn-transparent-color, .btn.btn-transparent-color, .btn-transparent-color-inverse:hover, .btn.btn-transparent-color-inverse:hover, .btn-transparent-color:hover,  .btn.btn-transparent-color:hover, .btn-transparent-color-inverse, .btn.btn-transparent-color-inverse {
+	border-color: #F51F6F;
+}
+.bg-skin-dark .vc_general.vc_btn3.vc_btn3-style-outline.vc_btn3-color-primary-bg {
+	color: #F51F6F;
+}
+.parallax-background .parallax-content a.btn:hover, .parallax-background .parallax-content a.btn:active, .parallax-background .parallax-content a.btn:focus {
+	color: #F51F6F;
+}
+#respond .form-submit input[type="submit"], input[type="submit"], .wpcf7 input[type="submit"], button[type="submit"] {
+	background-color: #F51F6F;
+}
+.bg-style.dark-wrapper .vc_general.vc_cta3 .vc_cta3-actions .vc_general.vc_btn3.vc_btn3-style-transparent.vc_btn3-color-primary-bg {
+	color: #F51F6F;
+}
+/* Go Button Styles */
+.vc_general.vc_btn3.vc_btn3-style-default.vc_btn3-color-primary-bg,
+.vc_btn3-color-primary-bg.vc_btn3-style-outline:hover,
+.vc_btn3-color-primary-bg.vc_btn3-style-outline:focus,
+.vc_btn3-color-primary-bg.vc_btn3-style-outline:active {
+	background-color: #F51F6F;
+}
+.vc_btn3-color-primary-bg.vc_btn3-style-outline {
+	border-color: #F51F6F;
+}
+.vc_btn3-color-primary-bg.vc_btn3-style-outline,
+.vc_general.vc_btn3.vc_btn3-style-transparent.vc_btn3-color-primary-bg {
+	color: #F51F6F;
+}
+button.ubtn .ubtn-hover {
+	background: #F51F6F;
+}
+.ubtn.ubtn-center-dg-bg .ubtn-hover, .ubtn.ubtn-top-bg .ubtn-hover, .ubtn.ubtn-bottom-bg .ubtn-hover, .ubtn.ubtn-left-bg .ubtn-hover, .ubtn.ubtn-right-bg .ubtn-hover, .ubtn.ubtn-center-hz-bg .ubtn-hover, .ubtn.ubtn-center-vt-bg .ubtn-hover {
+	background-color: #F51F6F;
+}
+.btn-default:hover,.btn-default:focus{
+	background-color: #F51F6F;
+}
+/* ------------- VC Progress Bar ------------- */
+.bar-style-tooltip .tooltip .tooltip-inner{
+	background: #F51F6F;
+}
+.bar-style-tooltip .tooltip.top .tooltip-arrow{
+	border-top-color: #F51F6F;
+}
+/* ------------- Header top section ------------- */
+.header-section .header-top-section{
+	background-color: #F51F6F;
+}
+/* ------------- Header logo section ------------- */
+.header-logo-section .navbar-nav > li a:hover,
+.header-logo-section .header-contact-details li > a:hover {
+	color: #F51F6F;
+}
+.header-logo-section .header-contact-details > li.header-phone:before,
+.header-logo-section .header-contact-details > li.header-email:before {
+	color: #F51F6F;
+}
+.header-section.type-header-6 .header-top-cart .cart-icon,
+.header-section .header-logo-section .header-top-cart .cart-count {
+	background:#F51F6F;
+}
+.header-logo-section .header-details-box .header-details-icon {
+	color: #F51F6F;
+}
+/* ------------- Navigation menu ------------- */
+.header-section .header-main-section .zozo-main-nav > li > a:hover,
+.header-section .header-main-section .zozo-main-nav > li:hover > a,
+.header-section .header-main-section .zozo-main-nav > li.active > a,
+.header-section .header-main-section li i:hover,
+.header-section .header-main-section li a:hover,
+.header-section .header-logo-section li.extra-nav i:hover,
+.header-section .header-logo-section li.extra-nav a:hover,
+.header-section .zozo-main-nav li.current-menu-ancestor > a, 
+.header-section .zozo-main-nav li.current-menu-parent > a,
+.header-section .zozo-main-nav li.current-menu-item > a,
+.header-section .header-main-section .zozo-main-nav.navbar-nav .dropdown-menu > li > a:focus, 
+.header-section .header-main-section .zozo-main-nav.navbar-nav .dropdown-menu > li > a:hover,
+.header-section .header-main-section .zozo-main-nav.navbar-nav .sub-menu > li > a:focus, 
+.header-section .header-main-section .zozo-main-nav.navbar-nav .sub-menu > li > a:hover,
+.header-section .header-main-section .dropdown-menu > li.dropdown:hover > a,
+.header-section .header-main-section .sub-menu > li.dropdown:hover > a,
+.header-section .header-main-section .dropdown-menu > .active > a,
+.header-section .header-main-section .dropdown-menu > .active > a:focus,
+.header-section .header-main-section .dropdown-menu > .active > a:hover,
+.header-section .header-main-section .menu-item.active > a,
+.header-section .header-main-section .mobile-sub-menu > li > a:hover,
+.header-section .header-main-section .mobile-sub-menu > li > a:active,
+.header-section .header-main-section .mobile-sub-menu > li > a:focus,
+.header-section .header-toggle-section .nav > li > a:focus, .header-section .header-toggle-section .nav > li > a:hover,
+.header-section .header-logo-section .header-contact-details li a:hover,
+.header-section .header-toggle-section .header-contact-details li a:hover,
+.header-toggle-content .btn-toggle-close,
+.header-toggle-section .header-side-top-section .header-side-top-submenu.dropdown-menu li > a:hover,
+.header-main-section li.header-side-wrapper > a:focus,
+.header-skin-light.header-transparent .header-top-section ul > li a:hover,
+.header-section.header-skin-dark .header-main-section .zozo-main-nav li.current-menu-item > a,
+.header-section .zozo-main-nav .mobile-sub-menu > li > a:hover {
+	color: #F51F6F;
+}
+.zozo-main-nav.navbar-nav .dropdown-menu, .zozo-main-nav.navbar-nav .dropdown-menu .sub-menu, .zozo-main-nav.navbar-nav .sub-menu, .zozo-megamenu-wrapper, .header-side-top-submenu.dropdown-menu{
+	border-color: #F51F6F;
+}
+.header-section .header-main-section .header-top-cart .cart-icon .cart-count,
+.header-toggle-section .header-top-cart .cart-icon {
+	background: #F51F6F;
+}
+.header-section.header-skin-light .zozo-megamenu-widgets-container .widget li a:hover,
+.header-section.header-skin-dark .zozo-megamenu-widgets-container .widget li a:hover {
+	color: #F51F6F;
+}
+/* TOGGLE HEADER */
+.header-section.type-header-9 .header-toggle-section .close-menu,
+.header-toggle-section .header-side-top-section .header-side-topmenu .btn:hover {
+	background:#F51F6F;
+}
+.header-toggle-section .header-side-top-section .header-side-topmenu > .dropdown-menu {
+	border-color: #F51F6F;
+}
+.header-section .menu-item .new-tag {
+	background:#F51F6F;
+}
+.header-section .menu-item .new-tag:before {
+	border-right-color:#F51F6F;
+}
+/* ------------- Form ------------- */
+input:focus, .form-control:focus, textarea:focus, #respond input:focus, #respond textarea:focus, #buddypress #whats-new:focus{
+	border-color: #F51F6F!important;
+}
+/* ------------------ Slidingbar ------------------ */
+.sliding-bar-widgets .widget.widget_recent_entries li a:hover, .sliding-bar-widgets .widget.widget_recent_comments li .comment-author-link a:hover, .sliding-bar-widgets .widget.zozo_category_posts_widget li a:hover, .sliding-bar-widgets .widget.widget_categories li a:hover, .sliding-bar-widgets .widget.widget_archive li a:hover, .sliding-bar-widgets .widget.widget_meta li a:hover, .sliding-bar-widgets .widget.widget_nav_menu li a:hover,
+.sliding-bar-widgets .widget.widget_recent_entries li a:focus, .sliding-bar-widgets .widget.widget_recent_comments li .comment-author-link a:focus, .sliding-bar-widgets .widget.zozo_category_posts_widget li a:focus, .sliding-bar-widgets .widget.widget_categories li a:focus, .sliding-bar-widgets .widget.widget_archive li a:focus, .sliding-bar-widgets .widget.widget_meta li a:focus, .sliding-bar-widgets .widget.widget_nav_menu li a:focus{
+	color: #F51F6F;
+}
+.sliding-bar-widgets .zozo-latest-posts .posts-title a:hover, .sliding-bar-widgets .zozo-latest-posts .posts-title a:focus{
+	color: #F51F6F;
+}
+.sliding-bar-widgets .tweet-user-name a:hover, .sliding-bar-widgets .tweet-user-name a:focus{
+	color: #F51F6F;
+}
+/* ------------- Search Form ------------- */
+.search-form .input-group-btn .btn:hover {
+	background-color: #F51F6F;
+	color: #fff;
+}
+/* ------------- Section title ------------- */
+.parallax-title:after{
+	background-color: #F51F6F;
+}
+/* ------------- Feature Box ------------- */
+/* Icon Color */
+.zozo-icon.icon-bordered.icon-shape, 
+.zozo-icon.icon-light.icon-shape,
+.zozo-feature-box .grid-item .grid-icon-wrapper .grid-icon.icon-none,
+.zozo-feature-box .grid-item .grid-icon-wrapper .grid-icon.icon-shape.icon-transparent,
+.zozo-feature-box .grid-item .grid-icon-wrapper .grid-icon.icon-shape.icon-pattern,
+.zozo-feature-box .grid-item .grid-icon-wrapper .zozo-icon.icon-dark.icon-shape, 
+.zozo-feature-box .grid-item .grid-icon-wrapper .grid-icon.icon-shape.icon-bordered,
+.zozo-features-list-wrapper .features-list-inner .features-icon {
+	color: #F51F6F;
+}
+/* Icon BG Color */
+.zozo-icon.icon-bg.icon-shape, 
+.zozo-icon.icon-border-bg.icon-shape {
+	background-color: #F51F6F;
+}
+/* Icon Hover Color */
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-color .zozo-icon.icon-light.icon-shape,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-color .grid-icon.icon-none.icon-skin-light,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-color .grid-icon.icon-none.icon-skin-dark {
+	color: #F51F6F;
+}
+/* Icon Hover Bg Color */
+.feature-box-style.style-box-with-bg .grid-item .grid-box-inner.grid-text-center:after, 
+.feature-box-style.style-box-with-bg .grid-item .grid-box-inner .grid-icon:after,
+.grid-item .grid-box-inner .grid-overlay-top .grid-icon-wrapper .grid-icon:after {
+	background-color: #F51F6F;
+}
+/* Icon Hover border & Bg color */
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-bg-br .grid-icon.icon-shape.icon-bordered,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-all .grid-icon.icon-shape.icon-bordered-bg  {
+	border-color: #F51F6F;
+}
+.zozo-feature-box.feature-box-style.style-overlay-box .grid-box-inner,
+.grid-item .grid-box-inner .grid-overlay-bottom{
+	background-color: #F51F6F;
+}
+/* Icon Hover Icon & Bg Color */
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-bg-icon .grid-icon.icon-shape,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-all .grid-icon.icon-shape {
+	color: #F51F6F;
+}
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-bg-icon .grid-icon.icon-shape.icon-dark,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-bg-icon .grid-icon.icon-shape.icon-light,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-bg-icon .grid-icon.icon-shape.icon-bordered,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-all .grid-icon.icon-shape.icon-dark,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-all .grid-icon.icon-shape.icon-light,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-all .grid-icon.icon-shape.icon-bordered {
+	background-color: #F51F6F;
+}
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-bg-icon .grid-icon.icon-shape.icon-pattern,
+.zozo-feature-box .grid-item:hover .grid-icon-wrapper.icon-hv-all .grid-icon.icon-shape.icon-pattern {
+	background-color: #F51F6F;
+}
+/* ------------- Progress Bar ------------- */
+.vc_progress_bar .vc_single_bar .vc_bar{
+	background-color: #F51F6F;
+}
+/* ------------- Tabs ------------- */
+.nav-tabs > li > a:hover, .zozo-left-vertical .nav-tabs > li > a:hover, .zozo-right-vertical .nav-tabs > li > a:hover {
+	background-color: #F51F6F;
+}
+.nav-tabs > li > a:hover, .zozo-left-vertical .nav-tabs > li > a:hover, .zozo-right-vertical .nav-tabs > li > a:hover,
+.zozo-left-vertical .nav-tabs > li.active > a,
+.zozo-right-vertical .nav-tabs > li.active > a,  
+.zozo-tab-horizontal .nav-tabs > li.active a, 
+.zozo-right-vertical .nav-tabs.tabs-right > li.active > a {
+	background: #F51F6F;
+}
+/* VC Tabs */
+.vc_tta-color-white.vc_tta-style-classic .vc_tta-tab.vc_active > a,
+.vc_tta-color-white.vc_tta-style-flat .vc_tta-tab.vc_active > a,
+.vc_tta-color-white.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading {
+	background-color: #F51F6F;
+}
+/* VC FAQ */
+.vc_toggle_square .vc_toggle_icon {
+	background-color: #F51F6F;
+}
+/* ------------- Accordion ------------- */
+.zozo-accordion.zozo-accordion-default .panel-title a, .zozo-accordion.zozo-accordion-classic .panel-title a {
+	color: #F51F6F;
+}
+/* ------------- Counter ------------- */
+.counter.zozo-counter-count:after {
+	background-color: #F51F6F;
+}
+.zozo-counter .counter-icon > i {
+	color: #F51F6F;
+}
+/* ------------- Dropcap ------------- */
+.dropcap {
+	color: #F51F6F;
+}
+.text-hightlight{
+	background-color: #F51F6F;
+}
+/* ------------- Service Box ------------- */
+.zozo-vc-service-box .service-box-inner .service-ribbon-text{
+	background-color: #F51F6F;
+}
+.zozo-vc-service-box:hover .service-box-content h4 {
+	color: #F51F6F;
+}
+/* ------------- Team Member ------------- */
+.team-member-name:after {
+	background: #F51F6F;
+}
+.team-item .team-member-name a:hover {
+	color: #F51F6F;
+}
+/* ------------- Testimonials ------------- */
+.testimonial-item.tstyle-border .testimonial-content{
+	border-color: #F51F6F;
+}
+.testimonial-item.tstyle-border .testimonial-content:before{
+	border-top-color: #F51F6F;
+}
+.testimonial-item .testimonial-content blockquote:before,
+.testimonial-item .testimonial-content blockquote:after {
+	color: #F51F6F;
+}
+.zozo-video-controls #video-play:hover,
+.zozo-video-controls #video-play:focus {
+	color: #F51F6F;
+}
+/* ------------- Twitter Slider ------------- */
+.zozo-twitter-slider-wrapper:before{
+	background: #F51F6F;
+}
+/* ------------- Owl Carousel Navigation ------------- */
+.owl-carousel.owl-theme .owl-controls .owl-nav div {
+	color: #F51F6F;
+	border-color: #F51F6F;
+}
+.owl-carousel.owl-theme .owl-controls .owl-nav div:hover {
+	background-color: #F51F6F;
+}
+.featured-gallery-slider .owl-carousel.owl-theme .owl-controls .owl-nav div {
+    background: #F51F6F;
+    border-color: #F51F6F;
+}
+
+/* ------------- Call To Action ------------- */
+.vc_btn3.vc_btn3-style-custom{
+	background: #F51F6F!important;
+}
+.vc_btn3.vc_btn3-style-custom:hover{
+	background-color: rgba(245, 31, 111,0.8)!important;
+}
+.vc_icon_element-background-color-primary-bg {
+	background: #F51F6F;
+}
+/* VC Slider */
+.vc_row .vc_images_carousel .vc_carousel-indicators .vc_active {
+	border-color: #F51F6F;
+	background: none;
+}
+.vc_row .vc_images_carousel .vc_carousel-indicators li {
+	background-color: #F51F6F;
+	border-color: #F51F6F;
+}
+/* ------------- Pricing Table ------------- */
+.pricing-plan-list .zozo-price-item h6,
+.zozo-pricing-table-wrapper:hover .zozo-pricing-item h4.pricing-title,
+.zozo-pricing-table-wrapper:hover .pricing-icon-wrapper > i {
+	color: #F51F6F;
+}
+.zozo-pricing-item .pricing-cost-wrapper .pricing-cost h3 {
+	color: #F51F6F;
+}
+.zozo-pricing-item.active .pricing-head:after {
+	background-color: #F51F6F;
+}
+.zozo-pricing-item .pricing-ribbon-wrapper .pricing-ribbon {
+	background: #F51F6F; /* Old browsers */
+	background: -moz-linear-gradient(top,  #F51F6F 0%, #E01D64 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F51F6F), color-stop(100%,#E01D64)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #F51F6F 0%,#E01D64 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #F51F6F 0%,#E01D64 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #F51F6F 0%,#E01D64 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #F51F6F 0%,#E01D64 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F51F6F', endColorstr='#E01D64',GradientType=0 ); /* IE6-9 */
+}
+/* ------------- Portfolio ------------- */
+.portfolio-box a:hover {
+	color: #F51F6F;
+}
+.portfolio-box h5 {
+	color: #F51F6F;
+}
+.portfolio-custom-text span {
+	color: #F51F6F;
+}
+.portfolio-mask a, .portfolio-mask a:hover {
+	background-color: #F51F6F;
+}
+/* ------------- Pagination & Pager ------------- */
+.pagination > li > span.current, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+	color: #F51F6F;
+}
+.pagination > li > a.prev, .pagination > li > a.next {
+	background-color: #F51F6F;
+}
+.pagination > li > a.prev:hover:after, .pagination > li > a.prev:active:after, .pagination > li > a.prev:focus:after, .pagination > li > a.next:hover:after, .pagination > li > a.next:active:after, .pagination > li > a.next:focus:after {
+	background-color: #F51F6F;
+	border-color: #F51F6F;
+}
+.pager li > a, .pager li > span {
+	border-color: #F51F6F;
+	background-color: #F51F6F;
+}
+.pager li > a:hover, .pager li > span:hover, .pager li > a:active, .pager li > span:active, .pager li > a:focus, .pager li > span:focus {
+	background-color: #F51F6F;
+	color: #fff;
+}
+/* ------------- Social Email Icon ------------- */
+.zozo-social-share-icons li.email a:hover {
+	background-color: #F51F6F;
+	border-color: #F51F6F;
+}
+.zozo-social-icons.soc-icon-transparent li.email a:hover, 
+.zozo-social-icons.soc-icon-transparent li.email a:hover i {	
+	color: #F51F6F;
+}
+.zozo-social-icons li.email a:hover {
+	background-color: #F51F6F;
+}
+/* Addons Icon Color */
+.stats-block .aio-icon i {
+	color: #F51F6F;
+}
+/* ------------- Blog ------------- */
+.latest-posts-layout .entry-meta .read-more > a:after {
+	color: #F51F6F;
+}
+.large-posts h2.entry-title a:hover, .large-posts h2.entry-title a:focus {
+    color: #F51F6F;
+}
+.entry-meta-wrapper .entry-meta i, .entry-meta-wrapper .entry-meta .meta-name {
+	color: #F51F6F;
+}
+.entry-meta a:hover, .entry-meta a:active, .entry-meta a:focus {
+	color: #F51F6F;
+}
+.post .btn-more.read-more-link {
+	color: #F51F6F;
+}
+.tags-title, .sharing-title {
+	color: #F51F6F;
+}
+.post-tags > a:hover, .post-tags > a:active, .post-tags > a:focus {
+	color: #F51F6F;
+}
+.comment-form .zozo-input-group-addon .input-group-addon {
+	color: #F51F6F;
+}
+.comment-container span i, .comment-container a i {
+	color: #F51F6F;
+}
+#respond.comment-respond .form-submit input[type="submit"] {
+	border-color: #F51F6F;
+	background-color: #F51F6F;
+}
+.post blockquote:after {
+	background: #F51F6F;
+}
+/* Blog List */
+.entry-title a:hover, .related-content-wrapper h5 .post-link:hover {
+	color: #F51F6F;
+}
+/*widget*/
+.tagcloud a{
+	background-color: #F51F6F;
+}
+.latest-posts-menu .entry-date i {
+	color: #F51F6F;
+}
+.zozo-tabs-widget .tabs .zozo-tab-content a:hover {
+	color: #F51F6F;
+}
+.footer-widgets .widget a:hover {
+	color: #F51F6F;
+}
+.widget .menu-services-menu-container ul li a:hover,
+.widget .menu-services-menu-container ul li.current-menu-item a, 
+.widget .menu-services-menu-container ul li.current-menu-item a:hover{
+	background-color: #F51F6F;
+}
+/* Futured Images Slider */
+.featured-caption .featured-caption-inner .featured-post-title a:hover {
+	color: #F51F6F;
+}
+
+/* ------------- Audio & Video Player ------------- */
+.mejs-audio .mejs-controls .mejs-time-rail .mejs-time-current, .video-player .mejs-controls .mejs-time-rail .mejs-time-current, .mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: #F51F6F;
+}
+/* Time Table */
+.time-table .table > thead{
+	background-color:#F51F6F;
+}
+/* ------------- Contact Form ------------- */
+.zozo-input-group-addon .input-group-addon {
+	color: #F51F6F;
+}
+/* ------------- Contact Us ------------- */
+.contact-info-inner h4.contact-widget-title{
+	color: #F51F6F;
+}
+.contact-info-inner h5 a{
+	color: #F51F6F;
+}
+.zozo-social-icons.social-style-background li a, .contact-info-style2 h6 {
+    background: #F51F6F;
+}
+/* ------------- Footer ------------- */
+.footer-widgets-section .flickr_photo_item a:after {
+    background:#F51F6F;
+}	
+.footer-backtotop a:hover,
+.footer-backtotop a:focus,
+.footer-backtotop a:active {
+	background:#F51F6F;
+}
+/*Dark*/
+.footer-section.footer-skin-dark .widget.widget_recent_entries li a:hover, 
+.footer-section.footer-skin-dark .widget.widget_recent_comments li .comment-author-link a:hover, 
+.footer-section.footer-skin-dark .widget.zozo_category_posts_widget li a:hover, 
+.footer-section.footer-skin-dark .widget.widget_categories li a:hover, 
+.footer-section.footer-skin-dark .widget.widget_archive li a:hover, 
+.footer-section.footer-skin-dark .widget.widget_meta li a:hover, 
+.footer-section.footer-skin-dark .widget.widget_nav_menu li a:hover,
+.footer-section.footer-skin-dark .widget li .tweet-user-name a:hover,
+.footer-section.footer-skin-dark .widget.zozo_popular_posts_widget .posts-title > a:hover,
+.footer-section.footer-skin-dark .zozo-tabs-widget a:hover,
+.footer-section.footer-skin-dark .widget.widget_pages li > a:hover {
+	color: #F51F6F;
+}
+/* ------------- Responsive Video Section ------------- */
+.video-bg .mb_YTVTime {
+	background:#F51F6F;
+}
+/* ------------- Woocommerce ------------- */
+.woo-cart-item .remove-cart-item:hover {
+	color: #F51F6F;
+}
+.woocommerce ul.products li.product h3 > a:hover {
+	color: #F51F6F;
+}
+.woo-dropdown > li strong:hover {
+	color: #F51F6F;
+}
+.woocommerce ul.products li .product-buttons a.woo-show-details, .woocommerce .product-buttons > a.add_to_cart_button{
+	background: #F51F6F;
+}
+.woocommerce .price > .amount, .woocommerce-page .price > .amount, .price ins > .amount {
+	color: #F51F6F;
+}
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.page-numbers.current {
+	background-color: #F51F6F;
+}
+.woocommerce span.onsale::before {
+	border-color: transparent #F51F6F transparent transparent;
+}
+.woocommerce span.onsale:after, .woocommerce-page span.onsale:after, .woocommerce ul.products li.product .onsale:after, .woocommerce-page ul.products li.product .onsale:after {
+	border-top-color: #F51F6F;
+}
+/*.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
+	background: #F51F6F;
+}*/
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+	background: #F51F6F;
+}
+.wpb_row .wpb_column .wpb_wrapper .wcmp-product .wcmp-product-desc h2:hover, .wpb_row .wpb_column .wpb_wrapper .wcmp-product .wcmp-product-desc h2:focus{
+	color: #F51F6F;
+}
+/* ------------- Woocommerce Single ------------- */
+.woocommerce span.onsale, .woocommerce-page span.onsale, .woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale {
+	background: #F51F6F;
+}
+.woocommerce #reviews .comment-text p.meta strong, .woocommerce-page #reviews .comment-text p.meta strong {
+	color: #F51F6F;
+}
+.order-total span.amount {
+	color: #F51F6F;
+}
+/* ------------- Woocommerce Tabs ------------- */
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li:hover, .woocommerce-page #content div.product-box-wrapper .woocommerce-tabs ul.tabs li:hover, .woocommerce-page div.product .woocommerce-tabs ul.tabs li:hover{
+	background: #F51F6F;
+}
+.woocommerce #review_form #respond .form-submit input:hover, .woocommerce #review_form #respond .form-submit input:active, .woocommerce #review_form #respond .form-submit input:focus, .woocommerce-page #review_form #respond .form-submit input:hover, .woocommerce-page #review_form #respond .form-submit input:active, .woocommerce-page #review_form #respond .form-submit input:focus{
+	background: #F51F6F;
+}
+/* ------------- Woocommerce Buttons ------------- */
+.woocommerce #content input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt {
+	background: #F51F6F;
+	border-color: #F51F6F;
+}
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+	background: #F51F6F;
+	border-color: #F51F6F;
+}
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
+	background-color: #F51F6F;
+}
+.woocommerce #content div.product form.cart .button, .woocommerce div.product form.cart .button, .woocommerce-page #content div.product form.cart .button, .woocommerce-page div.product form.cart .button{
+	background: #F51F6F;
+}
+/*.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt[disabled]:disabled, .woocommerce #respond input#submit.alt[disabled]:disabled:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt[disabled]:disabled, .woocommerce a.button.alt[disabled]:disabled:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt[disabled]:disabled, .woocommerce button.button.alt[disabled]:disabled:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt[disabled]:disabled, .woocommerce input.button.alt[disabled]:disabled:hover {
+	background: #F51F6F;
+	border-color: #F51F6F;
+}*/
+.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button {
+	background: #F51F6F;
+}
+/* Woocommerce Cart */
+.shop_table.cart td.product-name > a:hover, .shop_table.cart td.product-price .amount, .shop_table.cart td.product-subtotal .amount {
+	color: #F51F6F;
+}
+.woocommerce .cart-collaterals .cart_totals table tr.order-total td .amount, .woocommerce-page .cart-collaterals .cart_totals table tr.order-total td .amount {
+	color: #F51F6F;
+}
+.zozo-woocommerce-thank-you .thank-you-text {
+	color: #F51F6F;
+}
+/* Latest Product Slider */
+.woo-latest-slider-item .product-buttons-overlay .product-buttons a:after{
+	color: #F51F6F;
+}
+/* ------------- Woocommerce Widgets ------------- */
+/* Filter By Price */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
+	border-bottom-color: #F51F6F;
+}
+.woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range, 
+.woocommerce-page .widget_price_filter .ui-slider-horizontal .ui-slider-range {
+	background: #F51F6F;
+}
+/* Product Category */
+.product_list_widget .amount,
+.woocommerce ul.product_list_widget li a:hover, 
+.sidebar .product-categories li:hover a {
+	color: #F51F6F;
+}
+.sidebar .product-categories li:hover .count {
+	background:#F51F6F;
+}
+.woocommerce .product-categories .current-cat > span,
+.theme-skin-dark .woocommerce .product-categories .current-cat > span {
+	background:#F51F6F;
+}
+.woocommerce .product-categories .current-cat > a,
+.theme-skin-dark .woocommerce .product-categories .current-cat > a {
+	color: #F51F6F;
+}
+.widget.widget_recent_entries li a:hover,
+.widget.widget_recent_comments li a:hover,
+.widget.zozo_category_posts_widget li a:hover,
+.widget.widget_categories li a:hover,
+.widget.widget_archive li a:hover,
+.widget.widget_meta li a:hover,
+.widget.widget_nav_menu li a:hover,
+.widget.widget_edd_categories_tags_widget li a:hover {
+	color:#F51F6F;
+}
+/* Twitter */
+.widget .tweet-item h5:before {
+	background:#F51F6F;
+}
+/* Footer */
+.footer-copyright-section .zozo-social-icons.soc-icon-transparent i:hover {
+	color: #F51F6F;
+}
+.footer-widgets .widget .soc-icon-circle li a:hover{
+	background:#F51F6F;
+}
+/* Widgets */
+.secondary_menu .widget_nav_menu ul li.menu-item > a:hover, .secondary_menu .widget_nav_menu ul li.menu-item > a:active, .secondary_menu .widget_nav_menu ul li.menu-item > a:focus {
+	color: #F51F6F;
+}
+/* --------------Selection Color-------------- */
+::-moz-selection {
+    background:#F51F6F;
+    color: #fff;
+}
+::selection {
+	background:#F51F6F;
+    color: #fff;
+} 
+::-webkit-selection {
+    background:#F51F6F;
+    color: #fff;
+}
+/* -------------- Revolution Slider ------------- */
+.zozo-revslider-section span {
+	color: #F51F6F;
+}
+.typo-light .text-color,
+.typo-dark .text-color,
+.text-color  {
+	color: #F51F6F;
+}
+.theme-bg-color {
+	background: #F51F6F;
+}
+.zozo-revslider-section .tp-bullets.simplebullets.round .bullet {    
+    border-color: #F51F6F;
+}
+.zozo-revslider-section .tp-bullets.simplebullets.round .bullet.selected {
+	background: #F51F6F;
+}
+.zozo-revslider-section .tp-button {
+	border-color: #F51F6F; 
+	background: #F51F6F;	
+}
+.zozo-revslider-section .tp-button:hover {	
+	color: #F51F6F;
+}
+.rev_slider .tp-bannertimer{
+	background: #F51F6F;
+}
+/* -------------- BuddyPress ------------- */
+/*#buddypress div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a, #buddypress div.item-list-tabs ul li a:hover, #buddypress div.item-list-tabs ul li a:active, #buddypress div.item-list-tabs ul li a:focus {
+	background: #F51F6F;
+	border-color: #F51F6F;
+}
+#buddypress button, #buddypress a.button, #buddypress input[type="submit"], #buddypress input[type="button"], #buddypress input[type="reset"], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
+	background-color: #F51F6F;
+}
+#buddypress button:hover, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type="submit"]:hover, #buddypress input[type="button"]:hover, #buddypress input[type="reset"]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress div.generic-button a:hover, #buddypress .comment-reply-link:hover {
+	background-color: rgba(245, 31, 111, 0.8);
+}
+#bbpress-forums .bbp-body .bbp-forum-title:hover,
+#bbpress-forums .bbp-body .bbp-topic-permalink:hover,
+li.bbp-forum-freshness a:hover,
+li.bbp-topic-freshness a:hover,
+#bbpress-forums div.bbp-topic-content a, #bbpress-forums div.bbp-reply-content a:hover,
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a:hover{
+	color: #F51F6F;
+}
+#buddypress div.item-list-tabs ul li a:hover span, #buddypress div.item-list-tabs ul li.selected a span{
+	color: #F51F6F;
+}*/
+#buddypress .comment-reply-link, #buddypress a.button, #buddypress button, #buddypress div.generic-button a, #buddypress input[type="button"], #buddypress input[type="reset"], #buddypress input[type="submit"], #buddypress ul.button-nav li a, a.bp-title-button {
+    background: #F51F6F;
+}
+#buddypress div.item-list-tabs ul li.current a, #buddypress div.item-list-tabs ul li.selected a,#buddypress div.item-list-tabs ul li a:hover,#buddypress div.item-list-tabs ul li a:focus,#buddypress div.item-list-tabs ul li a:active {
+    background: #F51F6F;
+}
+#buddypress div.activity-meta a {
+	background: #F51F6F;
+}
+#buddypress div.activity-meta a:hover,#buddypress div.activity-meta a:focus,#buddypress div.activity-meta a:active,#buddypress div.item-list-tabs ul li.current a:hover, #buddypress div.item-list-tabs ul li.current a:focus,#buddypress div.item-list-tabs ul li.current a:active,#buddypress div.item-list-tabs ul li.selected a:hover,#buddypress div.item-list-tabs ul li.selected a:focus,#buddypress div.item-list-tabs ul li.selected a:active,#buddypress .comment-reply-link:hover, #buddypress a.button:focus, #buddypress a.button:hover, #buddypress button:hover, #buddypress div.generic-button a:hover, #buddypress input[type="button"]:hover, #buddypress input[type="reset"]:hover, #buddypress input[type="submit"]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a{
+	background-color: rgba(245, 31, 111, 0.8);
+}
+/* BB PRESS */
+.bbp-pagination-links a:hover, .bbp-pagination-links span.current {
+	background: #F51F6F;
+	border-color: #F51F6F;
+}
+/* -------------- Events Calendar ------------- */
+#tribe-events .tribe-events-button, .tribe-events-button, #tribe-bar-form .tribe-bar-submit input[type="submit"] {
+	background-color: #F51F6F;
+	border-color: #F51F6F;
+}
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:hover {
+	color: #F51F6F;
+}
+.tribe-events-list .tribe-events-event-cost span {
+	background-color: #F51F6F;
+	border-color: #F51F6F;
+}
+#tribe-events-content .tribe-events-tooltip h4, #tribe_events_filters_wrapper .tribe_events_slider_val, .single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical{
+	color: #F51F6F;
+}
+.single-tribe_events .tribe-events-schedule .tribe-events-cost {
+	color: #F51F6F;
+}
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type="submit"], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a{
+	background-color: #F51F6F;
+}
+h2.tribe-events-page-title a:focus, h2.tribe-events-page-title a:hover,
+.tribe-events-list .type-tribe_events h2 a:hover,
+.tribe-events-list-event-title.entry-title.summary a:hover,
+.widget .tribe-events-list-widget-events h4.entry-title a:hover {
+	color: #F51F6F;
+}
+
+/* Blog Icon */
+article.post .post-inner-wrapper .post-featured-image a:before,
+.related-post-item .entry-thumbnail .post-img:before,
+.classic-grid-style .portfolio-content a.classic-img-link:before,
+.epl-listing-post .property-box .epl-blog-image:before{
+	background-color: #F51F6F;
+}
+.comment-container a:hover{
+	color: #F51F6F;
+}
+/* Admin Page */
+.zozo-social-share-box .author-social li a,
+.zozo-social-share-box .author-social li a:hover,
+.zozo-social-share-box .author-social li a:focus,
+.zozo-social-share-box .author-social li a.active {
+	background-color: #F51F6F;
+}
+.author-name a:hover{
+	color: #F51F6F;
+}
+/* -------------- Plugins ------------- */
+/* Easy Listing Properties */
+ul.epl-author-tabs li.epl-author-current, ul.property_search-tabs li.epl-sb-current, li.tbhead.current{
+	background-color: #F51F6F;
+}
+.tab-title:after, .epl-property-blog .price h5{
+	background-color: #F51F6F;
+}
+.epl-switching-sorting-wrap .epl-switch-view li.epl-current-view{
+	background-color: #F51F6F;
+}
+.epl-property-single .status-sticker.under-offer:hover, .epl-property-blog .status-sticker.under-offer:hover, 
+.epl-property-single .status-sticker:hover, .epl-property-blog .status-sticker:hover{
+	background: #F51F6F;
+}
+.property-details-wrapper, .property-gallery-wrapper{
+	background: #F51F6F;
+}
+.footer-skin-dark .widget_epl_recent_property .property-heading a:hover, .footer-skin-dark .widget_epl_recent_property .property-heading a:focus,
+.widget_epl_recent_property .property-heading a:hover, .widget_epl_recent_property .property-heading a:focus,
+.widget.widget_epl_recent_property input[type="submit"]:hover,
+.epl-play-btn:hover:after,
+.home-open-wrapper li a:hover, .home-open-wrapper li a:after,
+.property-features-list > li a:hover, .property-features-list > li a:after,
+.property-features-list > li a:hover, .property-features-list > li a:focus{
+	color: #F51F6F;
+}
+.epl-button, .epl-button:hover, .epl-button:focus{
+	background: #F51F6F;
+}
+.epl-author-title.author-title a:hover, .epl-author-title.author-title a:focus{
+	color: #F51F6F;
+}
+/* Restaurent Reservation */
+.picker--focused .picker__day--highlighted, .picker__day--highlighted:hover, .picker__day--infocus:hover, .picker__day--outfocus:hover,
+.picker__wrap .picker--focused .picker__day--selected, .picker__wrap .picker__day--selected, .picker__wrap .picker__day--selected:hover,
+.picker__wrap .picker--focused .picker__day--selected, .picker__wrap .picker__day--selected, .picker__wrap .picker__day--selected:hover{
+	background: #F51F6F !important;
+}
+.picker__wrap .picker--focused .picker__day--highlighted, .picker__wrap .picker__day--highlighted:hover, .picker__wrap .picker__day--infocus:hover, .picker__wrap .picker__day--outfocus:hover{
+	background-color: rgba(245, 31, 111,0.8);
+}
+.picker__wrap .picker__box .picker__button--clear:focus, .picker__wrap .picker__box .picker__button--clear:hover,
+.picker__wrap .picker__box .picker__button--close:focus, .picker__wrap .picker__box .picker__button--close:hover,
+.picker__wrap .picker__box .picker__button--today:focus, .picker__wrap .picker__box .picker__button--today:hover{
+	background: #F51F6F;
+    border-color: #F51F6F;
+}
+.picker__wrap .picker__box .picker__list-item--highlighted, .picker__list-item:hover, 
+.picker__wrap .picker__box .picker--focused .picker__list-item--highlighted, 
+.picker__wrap .picker__box .picker__list-item--highlighted:hover, 
+.picker__wrap .picker__box .picker__list-item:hover{
+	background: #F51F6F;
+	border-color: #F51F6F;
+}
+.reservation .rtb-text .picker__input.picker__input--active{
+	border-color: #F51F6F;
+}
+/* SportsPress */
+/*.sp-scrollable-table-wrapper thead tr th{
+	color: #F51F6F;
+}
+.sp-template-event-blocks .sp-event-blocks h4.sp-event-title a:hover, .sp-data-table tbody a:hover, .sp-player-list-link.sp-view-all-link:hover, .type-page .sp-template.sp-template-countdown h5 a:hover, .type-page .sp-template.sp-template-countdown h3 a:hover{
+	color: #F51F6F;
+}
+.typo-light .sp-template-event-blocks .sp-event-blocks h4.sp-event-title a{
+	color: #F51F6F;
+}*/
+/* SportsPress */
+.sp-data-table thead {
+	background: #F51F6F;
+}
+.bg-skin-dark table.sp-data-table td a:hover, .typo-light table.sp-data-table td a:hover {
+	color: #F51F6F;
+}
+/* Easy Digial Download */
+.edd-submit.button.blue, .edd-submit.button.blue:hover, .edd-submit.button.blue:focus{
+	background: #F51F6F;
+}
+.edd_price_option_price, .widget.widget_edd_cart_widget .edd-cart-meta.edd_subtotal span, .widget.widget_edd_cart_widget .edd-cart-meta.edd_total span{
+	color: #F51F6F;
+}
+.widget.widget_edd_cart_widget .cart_item.edd_checkout > a,
+.widget.widget_edd_cart_widget .edd-cart-quantity{
+	background: #F51F6F;
+}
+.edd_download_file .edd_download_file_link:hover {
+	color: #F51F6F;
+}
+.single-download .edd_price span, .edd_download .edd_price{
+	color: #F51F6F;
+}
+.edd-cart-added-alert {
+	border-color: #F51F6F;
+}
+#edd_discounts_list .edd_discount:hover:before {
+	background: #F51F6F;
+}
+
+/* Ultimate Visual Composer */
+.uvc-type-wrap .ultimate-typed-main,
+.uvc-heading-spacer .aio-icon {
+	color: #F51F6F;
+}
+.smile-icon-timeline-wrap .timeline-separator-text .sep-text,
+.smile-icon-timeline-wrap .timeline-wrapper .timeline-dot, .timeline-feature-item .timeline-dot,
+.smile-icon-timeline-wrap .timeline-line z {
+	background: #F51F6F;
+}
+.ultimate-vticker.ticker, .ultimate-vticker.ticker-down {
+	color: #F51F6F;
+}
+/* Ultimate Addon Pricing */
+.ult_pricing_table_wrap.ult_design_4.ult-cs-yellow .ult_pricing_table {
+	border-top-color: #F51F6F;
+}
+.ult_pricing_table_wrap.ult_design_1.ult-cs-yellow .ult_pricing_table, 
+.ult_pricing_table_wrap.ult_design_1.ult-cs-yellow .ult_pricing_table .ult_price_link .ult_price_action_button,
+.ult_pricing_table_wrap.ult_design_4.ult-cs-yellow .ult_pricing_table .ult_price_link .ult_price_action_button {
+	background: #F51F6F;
+}
+.ult-carousel-wrapper .slick-next,.ult-carousel-wrapper .slick-prev,
+.ult-carousel-wrapper .slick-next:hover,.ult-carousel-wrapper .slick-prev:hover,
+.ult-carousel-wrapper .slick-next:focus,.ult-carousel-wrapper .slick-prev:focus {
+	color: #F51F6F;
+}
+.ult_pricing_table_wrap.ult-cs-custom .ult_pricing_table .ult_price_link .ult_price_action_button {
+	background: #F51F6F;
+}
+.ult_pricing_table_wrap.ult-cs-custom .ult_pricing_table .ult_price_body_block, .ult_pricing_table_wrap.ult-cs-custom .ult_pricing_table .ult_pricing_heading { 
+	background: #F51F6F;
+}
+.ult_pricing_table_wrap.ult-cs-custom.ult_design_4 .ult_pricing_table .ult_price_link .ult_price_action_button {
+	background: #F51F6F;
+}
+/* VC Post Grid */
+.vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_date > div {
+    color: #F51F6F;
+}
+/* List Item */
+.hexagon li.icon_list_item .icon_list_icon {
+	background: #F51F6F;
+	border-color: #F51F6F;
+}
+.sitemap-wrapper ul li a:hover, .sitemap-wrapper ul li a:active, .sitemap-wrapper ul li a:focus {
+	color: #F51F6F;
+}
+/* WPSL */
+.wpsl-search {
+	background: #F51F6F;
+}
+#wpsl-search-wrap .wpsl-dropdown div {
+	border-color: #F51F6F;
+}

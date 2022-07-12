@@ -1,0 +1,370 @@
+/* ===============================================
+ * Admin Custom Styles
+ * =============================================== */
+.zozo_metabox_field {
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+.wp-admin select{
+	font-size: 13px;
+}
+.multiselect_wrapper.zozo_metabox_field {
+    overflow: visible;
+	float: left;
+}
+.zozo_metabox_field label {
+	width: 28%;
+	float: left;
+	margin-bottom: 0px;
+	margin-right: 15px;
+	line-height: 28px;	
+}
+span.ui-checkboxradio-icon.ui-corner-all.ui-icon.ui-icon-background.ui-icon-blank,
+.ui-checkboxradio-radio-label.ui-controlgroup-item span.ui-checkboxradio-icon {
+    display: none;
+}
+
+.zozo_metabox_field .fields, .zozo_metabox_field .re-fields, .portfolio-section .zozo_metabox_field .re-fields {
+	width: 70%;
+	float: left;
+}
+.zozo_metabox_field .re-fields {
+	float: none;
+}
+.zozo_metabox_field .zozo-radio-img-img {
+	border: 3px solid #fff;
+	margin: 0 5px 0 0;
+	display: none;
+	cursor: pointer;
+	float: left;
+	max-width: 70px;
+	max-height: 70px;
+}
+.zozo_metabox_field .zozo-radio-img-selected {
+	border: 3px solid #ccc;
+}
+.zozo_metabox_field .zozo-radio-img-img:hover {
+	opacity: 0.8;
+}
+.zozo_metabox_field input[type="text"] {
+	width: 70%;
+	margin: 0;
+	height: 28px;
+}
+.zozo_metabox_field .field-upload input[type="text"] {
+	display: block;
+}
+.zozo_metabox_field .wp-picker-container input.wp-color-picker[type="text"] {
+	height: auto;
+	display: inline;
+}
+.sortable-placeholder {
+	height: 45px;
+	border: 2px dashed #999999;
+}
+.clone-pricing-column {
+    display: inline-block;
+    float: none;
+    width: 100%;
+	position: relative;	
+}
+.pricing-new-column, .sortable-column-placeholder {
+	padding: 10px;
+	margin: 2% 0;
+	border: 1px solid #000;	
+	float: none;
+	display: block;
+}
+.sortable-column-placeholder {
+	height: 1200px;
+	border: 2px dashed #999999;
+}
+.zozo_metabox_field.repeatable {
+	display: none;
+}
+.clone-pricing-column label {
+	width: 35%;
+}
+.portfolio-section.repeatable {
+	display: none;
+}
+.zozo_metabox_field .field-iconpicker .zozo-iconpicker {
+	background: #fff;
+	border: 1px solid #B2B2B2;
+	height: 200px;
+	overflow-y: scroll;
+	cursor: pointer;
+}
+.zozo_metabox_field .field-iconpicker .zozo-iconpicker i.icon-tooltip {
+	background: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+	font-size: 16px;	
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	width: 35px;
+}
+.zozo_metabox_field .field-iconpicker .zozo-iconpicker.flat-icons i.icon-tooltip {	
+	font-size: 16px;	
+	height: 48px;
+	line-height: 48px;	
+	width: 48px;
+}
+.zozo_metabox_field .field-iconpicker .zozo-iconpicker i:hover {
+	background: #D8D8D8;
+}
+.zozo_metabox_field .field-iconpicker .zozo-iconpicker i.selected {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+#zozo_mslider_options .zozo_metabox_field .zozo-radio-img-img {
+	border: 3px solid #DBDBDB;
+}
+#zozo_mslider_options .zozo_metabox_field .zozo-radio-img-selected {
+	border: 3px solid #666666;
+}
+.multiselect_wrapper.zozo_metabox_field .chzn-container-multi .chzn-choices .search-field input {
+	height: 30px;
+}
+.zozo_metabox_field .btn, .clone-pricing-column .btn, .clone-portfolio-row .btn {
+	display: inline-block;
+	color: #555;
+	background: #f7f7f7;
+	height: 28px;	
+	line-height: 26px;
+	font-size: 13px;
+	text-align: center;
+	padding: 0 10px;
+	margin: 0 5px 0 0;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid;
+	border-color: #ccc;
+	-webkit-border-radius: 3px;
+		-ms-border-radius: 3px;
+		 -o-border-radius: 3px;
+			border-radius: 3px;
+	-webkit-box-shadow:0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+	    -ms-box-shadow:0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+		 -o-box-shadow:0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+			box-shadow:0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+.zozo_metabox_field .btn:hover, .clone-pricing-column .btn:hover, .clone-portfolio-row .btn:hover {
+	background: #ddd;
+	-webkit-box-shadow: none;
+	    -ms-box-shadow: none;
+		 -o-box-shadow: none;
+			box-shadow: none;
+
+}
+.zozo_metabox_field textarea {
+	width: 100%;
+}
+.clone-portfolio-row .portfolio-section {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #BCBCBC;
+}
+.field-multiselect .multiselect-box {
+	width: 69%;
+}
+.zozo_metabox_field .field-sliderui .zozo-slider-text {
+	width: 70px;
+	text-align: center;
+}
+.zozo_metabox_field .field-sliderui .ui-slider {
+	margin: 0 0 4px 15px;
+}
+#zozo_page_options .inside, #zozo_post_options .inside, #zozo_mslider_options .inside, #zozo_portfolio_options .inside, #zozo_team_options .inside{
+    background-color: #f0f0f0;
+    padding: 0;
+	margin: 0;
+}
+.field-select select {
+    min-width: 69%;
+}
+.field-textarea textarea {
+    width: 70%;
+}
+.zozo-field-title {
+    color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#poststuff h2 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+	font-weight: 600;
+}
+.zozo-field-sub-title {
+    text-transform: uppercase;
+}
+/* ===============================================
+ * jQuery UI Custom Styles
+ * =============================================== */
+.ui-slider {
+    background: #222;
+    border: none;
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+    display: inline-block;    
+    position: relative;
+    text-align: left;
+    width: 200px;	
+}
+.ui-slider-horizontal {
+    border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+    height: 4px;
+}
+.ui-slider-range.ui-widget-header {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range {
+    height: 100%;
+    top: 1px;
+	background-color: #ddd;
+}
+.ui-slider .ui-slider-range {
+    background-position: 0 0;
+    border: 0 none;
+    display: block;
+    font-size: 0.7em;
+    position: absolute;
+    z-index: 1;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -9px;
+    top: -8px;
+}
+.ui-slider .ui-slider-handle {
+    background: #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+    cursor: move;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+	box-shadow:0 1px 3px rgba(0, 0, 0, 0.4);
+}
+/* ===============================================
+ * Page Options Tabs
+ * =============================================== */
+.zozo-page-tabs-list.ui-tabs-nav {
+    height: 45px;
+	margin: 0 0 0 -1px;
+}
+.zozo-page-tabs .zozo-page-tabs-list > li {
+	display:inline-block;
+	line-height: 46px;
+	margin-bottom:0;
+}
+.zozo-page-tabs .zozo-page-tabs-list > li > a {
+	background: #f5f5f5;
+	border: 1px solid #e7e7e7;
+	border-bottom:none;
+	border-right:none;
+	padding: 12px 20px;
+	font-weight:700;
+	text-decoration:none;
+	color:#555;
+	box-shadow: 0 1px 0 #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.0);
+	-ms-box-shadow: 0 1px 0 #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.0);
+	-moz-box-shadow: 0 1px 0 #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.0);
+	-o-box-shadow: 0 1px 0 #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.0);
+	-webkit-box-shadow: 0 1px 0 #ffffff inset, 0 1px 0 rgba(0, 0, 0, 0.0);
+}
+.zozo-page-tabs .zozo-page-tabs-list > li:last-child > a {
+	border-right: 1px solid #e7e7e7;
+}
+.zozo-page-tabs .zozo-page-tabs-list > li.ui-tabs-active > a,
+.zozo-page-tabs .zozo-page-tabs-list > li > a:hover {
+	background: #fff;
+    color: #333333;
+}
+.zozo-page-meta-tab.ui-tabs-panel {
+    background: #ffffff;
+	padding: 20px;
+}
+/* EDD Fixes */
+.inside .ui-tabs{
+	padding: 0;
+}
+.inside .ui-tabs .ui-tabs-nav {
+    background: #f0f0f0 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.inside .ui-tabs .ui-tabs-nav li{
+	margin: 0 0 0 -1px;
+}
+.inside .ui-widget, .inside .ui-widget input, .inside .ui-widget select, .inside .ui-widget textarea, .inside .ui-widget button{
+	font-family: "open sans";
+}
+.inside .ui-tabs .ui-tabs-nav li a {
+    border: 1px solid #e7e7e7;
+    box-shadow: none;
+    font-family: "open sans";
+    line-height: 18px;
+    padding: 12px 20px;
+	font-weight: normal;
+}
+.inside .ui-state-default, .inside .ui-widget-content .ui-state-default, .inside .ui-widget-header .ui-state-default{
+	border: 0px;
+}
+/* hr */
+.zozo-page-meta-tab.ui-tabs-panel hr {
+	border-color: #f1f1f1;
+	border-width: 1px 0 0;
+}
+/* Label with Input */
+.zozo_metabox_field {
+    border-bottom: 1px solid;
+    border-color: #f1f1f1;
+    padding: 20px 0;
+}
+.zozo_metabox_field:first-child {
+	padding-top: 0;
+}
+.zozo_metabox_field:last-child {
+    border-bottom: 0 none;
+    padding-bottom: 0;
+	margin-bottom: 0;
+}
+.zozo-page-meta-tab.ui-tabs-panel p.description {
+    margin: 0;
+	line-height: 28px;
+}
+/* Input Upload */
+.zozo_metabox_field .field-upload input[type="text"] {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 69%;
+}
+.zozo_metabox_field input[type="checkbox"], .zozo_metabox_field input[type="radio"] {
+	margin-top: 7px;
+}

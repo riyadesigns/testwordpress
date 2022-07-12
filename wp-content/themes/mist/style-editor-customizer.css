@@ -1,0 +1,75 @@
+/*!
+Mist Customizer Styles
+
+NOTE: This file is automatically populated with styles if the user selects a custom primary color in the customzier.
+*/
+
+
+.editor-block-list__layout .editor-block-list__block,
+.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block p,
+.block-editor__container .editor-styles-wrapper .mce-content-body {font-family: Arimo;font-size: 14px;color: #333333;line-height: 25px;
+}.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block h1 {font-family: Oswald;font-size: 48px;color: ;line-height: 62px;
+}.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block h2 {font-family: Oswald;font-size: 40px;color: ;line-height: 52px;
+}.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block h3 {font-family: Oswald;font-size: 32px;color: ;line-height: 42px;
+}.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block h4 {font-family: Oswald;font-size: 24px;color: ;line-height: 31px;
+}.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block h5 {font-family: Oswald;font-size: 18px;color: ;line-height: 23px;
+}.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block h6 {font-family: Oswald;font-size: 16px;color: ;line-height: 21px;
+}.editor-styles-wrapper .wp-block, .editor-styles-wrapper .editor-block-list__block.wp-block[data-align=wide], .wp-block[data-align="wide"] {
+	width: 1200; max-width: 100%;
+}.editor-styles-wrapper .wp-block:not([data-align="full"]) {
+	width: 1200; max-width: 100%;
+}
+/*
+ * Set colors for:
+ * - links
+ * - blockquote
+ * - pullquote (solid color)
+ * - buttons
+ */
+.editor-block-list__layout .editor-block-list__block a,
+.editor-block-list__layout .editor-block-list__block .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
+.editor-block-list__layout .editor-block-list__block .wp-block-button.is-style-outline:hover .wp-block-button__link:not(.has-text-color),
+.editor-block-list__layout .editor-block-list__block .wp-block-button.is-style-outline:focus .wp-block-button__link:not(.has-text-color),
+.editor-block-list__layout .editor-block-list__block .wp-block-button.is-style-outline:active .wp-block-button__link:not(.has-text-color),
+.editor-block-list__layout .editor-block-list__block .wp-block-file .wp-block-file__textlink {
+	color: #ffc400; /* base: #0073a8; */
+}
+
+.wp-block-quote[style*="text-align:right"], .wp-block-quote[style*="text-align: right"] {
+	border-right: 3px solid #ffc400; /* base: #0073a8; */
+}
+.editor-block-list__layout .editor-block-list__block .wp-block-pullquote.is-style-solid-color:not(.has-background-color) {
+	background-color: #ffc400; /* base: #0073a8; */
+}
+
+.editor-block-list__layout .editor-block-list__block .wp-block-file .wp-block-file__button,
+.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link,
+.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link:active,
+.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link:focus,
+.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+	background-color: #ffc400; /* base: #0073a8; */
+}
+
+/* Hover colors */
+.editor-block-list__layout .editor-block-list__block a:hover,
+.editor-block-list__layout .editor-block-list__block a:active,
+.editor-block-list__layout .editor-block-list__block .wp-block-file .wp-block-file__textlink:hover {
+	color: #ffc400; /* base: #005177; */
+}
+
+/* Do not overwrite solid color pullquote or cover links */
+.editor-block-list__layout .editor-block-list__block .wp-block-pullquote.is-style-solid-color a,
+.editor-block-list__layout .editor-block-list__block .wp-block-cover a {
+	color: inherit;
+}
+.wp-block-pullquote blockquote,
+.editor-styles-wrapper .editor-block-list__layout blockquote.wp-block-quote.is-style-large p {
+	border-left: solid #ffc400 3px;
+}
+.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block .wp-block-quote p,
+.editor-styles-wrapper .editor-block-list__layout .editor-block-list__block blockquote p {
+	font-family: georgia;
+	font-style: italic;
+	font-size: 20px;
+	color: #7f7f7f;
+}
